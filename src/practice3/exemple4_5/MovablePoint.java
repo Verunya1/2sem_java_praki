@@ -25,21 +25,21 @@ public class MovablePoint extends MovableCircle implements Movable {
 
     @Override
     public void moveUp() {
-        y++;
+        y+=ySpeed;
     }
 
     @Override
     public void moveDown() {
-        y--;
+        y-=ySpeed;
     }
 
     @Override
     public void moveLeft() {
-        x--;
+        x-=xSpeed;
     }
 
     @Override
     public void moveRight() {
-        x++;
+        x+=xSpeed;
     }
 }
